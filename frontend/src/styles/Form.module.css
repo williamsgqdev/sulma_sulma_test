@@ -1,0 +1,80 @@
+.form_container {
+    width: 40%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.fields_container {
+ margin-top: 2rem;
+ text-align: center;
+ width: 100%;
+}
+
+.field_container {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    padding: 1.5rem 0.3rem;
+    margin-bottom: 2rem;
+}
+
+.questions {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid black;
+    width: 80%;
+    text-align: center;
+}
+input:focus {
+    outline: none;
+    border-bottom: 1px solid rgb(181, 181, 255);
+}
+
+button {
+    padding: 0.5rem 4rem;
+    color: white;
+    border: none;
+    background: linear-gradient(90deg, rgba(249,38,36,1) 0%, rgba(193,47,136,1) 46%, rgba(72,81,137,1) 100%);
+    border-radius: 0.3rem;
+}
+
+button:hover {
+    background: linear-gradient(90deg, rgb(237, 83, 80) 0%, rgb(240, 24, 157) 46%, rgb(112, 128, 232) 100%);
+
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .form_container {
+        width: 90%;
+        padding: 0.5rem;
+    }
+
+    h2{
+        font-size: 1.5rem;
+    }
+    .fields_container{
+        width: 85%;
+        padding-left: 1rem 0.2rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .form_container {
+        width: 100%;
+        padding: 0.5rem;
+        height: 100%;
+    }
+}

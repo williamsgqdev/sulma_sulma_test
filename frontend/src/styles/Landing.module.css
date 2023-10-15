@@ -1,0 +1,8 @@
+.landing {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(249,38,36,1) 0%, rgba(193,47,136,1) 46%, rgba(72,81,137,1) 100%);
+}
