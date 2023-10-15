@@ -19,7 +19,7 @@ const Form = () => {
         onSubmit: async (values) => {
             setLoading(true);
             try {
-                const {data} = await  axios.post(`${import.meta.env.VITE_SERVICE_URL}/feedback`, values);                
+                const {data} = await  axios.post(`${import.meta.env.VITE_SERVICE_URL}/feedback`, values);             
                 toast.success( data.message, {
                     position: "top-right",
                     autoClose: 5000,
@@ -42,8 +42,10 @@ const Form = () => {
                     progress: undefined,
                     theme: "dark",
                     });
+
             }
             setLoading(false);
+            formik.resetForm();   
         }
     })
     
